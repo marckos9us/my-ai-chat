@@ -13,7 +13,7 @@ async function sendPrompt() {
             "Content-Type": "application/json"
         },
         body: JSON.stringify({
-            model: "neural-chat-7b-v3-uncensored",
+            model: "openrouter/neural-chat-7b-v3-uncensored", // ← التصحيح هنا
             messages: [{ role: "user", content: prompt }]
         })
     });
